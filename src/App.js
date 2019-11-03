@@ -1,12 +1,26 @@
 import React from 'react';
-import Header from './Components/Layout/Header';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import PageHome from './Components/Pages/PageHome';
+import PageNosotros from './Components/Pages/PageNosotros';
+import PageBlog from './Components/Pages/PageNosotros';
+import PageContacto from './Components/Pages/PageContacto';
+
+
+
+
 
 
 function App() {
   return (
-    <div>
-      <Header/>
-    </div>
+        <BrowserRouter>
+                <Redirect from="/" to="/PageHome" />
+                <Switch>
+                  <Route exact path = "/PageHome" render = {()=><PageHome/>}/>
+                  <Route exact path = "/PageNosotros" render = {() => <PageNosotros/>} />
+                  <Route exact path = "/PageBlog" render = {() => <PageBlog/>} />
+                  <Route exact path = "/PageContacto" render = {() => <PageContacto/>} />
+                </Switch>
+          </BrowserRouter>
   );
 }
 

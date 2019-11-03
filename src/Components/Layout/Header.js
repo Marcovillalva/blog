@@ -4,9 +4,9 @@ class Index extends Component {
     render() {
         return (
             <div>
-               Heyyyy 
+               
             </div>
-        );
+        )
     }
 }
 
