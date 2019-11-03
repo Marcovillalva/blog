@@ -12,15 +12,15 @@ import PageContacto from './Components/Pages/PageContacto';
 
 function App() {
   return (
-        <BrowserRouter>
-                <Redirect from="/" to="/PageHome" />
-                <Switch>
-                  <Route exact path = "/PageHome" render = {()=><PageHome/>}/>
-                  <Route exact path = "/PageNosotros" render = {() => <PageNosotros/>} />
-                  <Route exact path = "/PageBlog" render = {() => <PageBlog/>} />
-                  <Route exact path = "/PageContacto" render = {() => <PageContacto/>} />
-                </Switch>
-          </BrowserRouter>
+    <BrowserRouter>
+      <Redirect from="/" to="/pageHome" />
+        <Switch>
+          <Route exact path = "/PageHome" component = {PageHome}/>
+          <Route exact path = "/PageBlog" component = {PageBlog}/>
+          <Route exact path = "/PageContacto" component = {PageContacto}/>
+          <Route exact path = "/PageNosotros" component = {PageNosotros}/>
+        </Switch>
+    </BrowserRouter>
   );
 }
 
