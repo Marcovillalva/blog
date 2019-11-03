@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import PageHome from './Components/Pages/PageHome';
 import PageNosotros from './Components/Pages/PageNosotros';
-import PageBlog from './Components/Pages/PageNosotros';
+import PageBlog from './Components/Pages/PageBlog';
 import PageContacto from './Components/Pages/PageContacto';
 
 

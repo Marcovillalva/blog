@@ -6,7 +6,7 @@ class PageBlog extends Component {
         return (
             <div>
                 <BarNav/>
-                BLOG Putos
+                Blog chinga
             </div>
         );
     }
