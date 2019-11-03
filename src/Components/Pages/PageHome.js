@@ -6,6 +6,7 @@ class PageHome extends Component {
         return (
             <div>
                 <BarNav/>
+                Home
             </div>
         );
     }
